@@ -1,0 +1,41 @@
+<div class="screen">
+  <mat-card class="card">
+    <mat-card-header>
+      <div mat-card-avatar class=" header"></div>
+      <mat-card-title class="parags" style="color: white;">باران</mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+    <img src="../../../assets/images/OIG.jpeg" alt="">
+    <mat-card-content>
+      <p>
+      </p>
+    </mat-card-content>
+    <form class="form">
+      <label for="username">نام کاربری:</label><br>
+      <input name="username" type="text" id="username" [formControl]="username" /><br>
+      <label for="password">رمزعبور:</label><br>
+      <input name="Password" type="password" id="password" [formControl]="password" />
+      <mat-progress-bar *ngIf="isBusy==true" mode="indeterminate"></mat-progress-bar>
+
+      <div
+        [class.green]="message=='خوش امدید'"
+       [class.red]="message=='نام کاربری یا کلمه عبور اشتباه است'" *ngIf="message!=''">
+        {{message}}
+      </div>
+      <mat-card-actions *ngIf="isBusy==false">
+<!-- 
+          <input  name="keepMe" [(ngModel)]="keepMe" type="checkbox" id="myBox" class="box">
+          <label class="boxtext" for="myBox">مرا ب خاطر نگه دار</label> -->
+          <div class="custom-checkbox">
+            <input name="keepMe" [(ngModel)]="keepMe" type="checkbox" id="myBox" class="box">
+            <label class="boxtext" for="myBox">مرا بخاطر نگه دار</label>
+          </div>
+
+        <button  (click)="signin()" [disabled]="!username.value || !password.value" class="login"
+          type="submit">ورود</button> &nbsp;
+        <button (click)="signup()" class="parags signup">ثبت نام</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+
+</div>

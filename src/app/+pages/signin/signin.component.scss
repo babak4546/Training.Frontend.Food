@@ -1,0 +1,113 @@
+@font-face {
+    font-family: myFont;
+    src: url(../../../assets/fonts/Dirooz.woff2);
+
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: GandomDigit;
+    src: url(../../../assets/fonts/Gandom-FDigitts.woff);
+
+    font-weight: normal;
+}
+
+.screen {
+    background: rgb(59, 57, 96);
+    background: linear-gradient(90deg, rgba(59, 57, 96, 1) 0%, rgba(9, 51, 121, 1) 37%, rgba(32, 64, 70, 1) 100%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.card {
+    width: 30vw;
+    background-color: rgb(42, 63, 85);
+    border-radius: 8px;
+    position: static;
+    
+
+}
+
+.header {
+    background-image: url('../../../assets/SVGs/restaurant_FILL0_wght400_GRAD0_opsz24.svg');
+    background-size: cover;
+    background-color: #eecc1e;
+
+}
+
+.parags {
+    font-family: myFont;
+}
+
+.box{
+position: relative;
+right: 2vw;
+top: 2vh;
+max-width: 22px;
+
+}
+
+.custom-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px; /* Adjust the top margin as needed */
+  }
+.login {
+    background-color: rgb(56, 47, 75);
+    font-family: myFont;
+    color: white;
+    width: 12vw;
+    height: 5vh;
+    border-radius: 4px;
+
+
+}
+
+.signup {
+    background-color: rgb(36, 50, 37);
+    font-family: myFont;
+    color: white;
+    width: 12vw;
+    height: 5vh;
+    border-radius: 4px;
+}
+.dis{
+    background-color: grey;
+    
+}
+.form input{
+    width: 23vw;
+    height: 4vh;
+    background-color: rgb(94, 113, 96);
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.form label{
+
+    font-family: Myfont;
+    color: white;
+    margin: 5px;
+ 
+}
+ 
+
+.red{
+    background-color: rgb(206, 75, 75);
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+    padding-right:4px ;
+}
+.green{
+    background-color: rgb(29, 166, 75);
+    color: #000000;
+    border-radius: 5px;
+    margin: 5px;
+    padding-right:4px ;
+
+}
